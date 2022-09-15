@@ -16,9 +16,25 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var moovie: Moovie
-        moovie = Moovie(tittle: "Filme 1", description: "Descrição 1")
+        moovie = Moovie(tittle: "Filme 1", description: "Descrição 1", img: UIImage(named: "filme1")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 2", description: "Descrição 2")
+        moovie = Moovie(tittle: "Filme 2", description: "Descrição 2", img: UIImage(named: "filme2")! )
+        moovies.append( moovie )
+        moovie = Moovie(tittle: "Filme 3", description: "Descrição 2", img: UIImage(named: "filme3")! )
+        moovies.append( moovie )
+        moovie = Moovie(tittle: "Filme 4", description: "Descrição 2", img: UIImage(named: "filme4")! )
+        moovies.append( moovie )
+        moovie = Moovie(tittle: "Filme 5", description: "Descrição 2", img: UIImage(named: "filme5")! )
+        moovies.append( moovie )
+        moovie = Moovie(tittle: "Filme 6", description: "Descrição 2", img: UIImage(named: "filme6")! )
+        moovies.append( moovie )
+        moovie = Moovie(tittle: "Filme 7", description: "Descrição 2", img: UIImage(named: "filme7")! )
+        moovies.append( moovie )
+        moovie = Moovie(tittle: "Filme 8", description: "Descrição 2", img: UIImage(named: "filme8")! )
+        moovies.append( moovie )
+        moovie = Moovie(tittle: "Filme 9", description: "Descrição 2", img: UIImage(named: "filme9")! )
+        moovies.append( moovie )
+        moovie = Moovie(tittle: "Filme 10", description: "Descrição 2", img: UIImage(named: "filme10")! )
         moovies.append( moovie )
     }
     
@@ -36,6 +52,7 @@ class ViewController: UITableViewController {
         
         let moovieContent = tableView.dequeueReusableCell(withIdentifier: moovieContentReuse, for: indexPath)
         moovieContent.textLabel?.text = moovie.tittle
+        moovieContent.imageView?.image = moovie.img
         
         return moovieContent
     }

@@ -13,9 +13,10 @@ class Moovie {
     var description: String!
     var img: UIImage!
     
-    init( tittle: String, description: String ){
+    init( tittle: String, description: String, img: UIImage ){
         self.tittle = tittle
         self.description = description
+        self.img = img
     }
     
 }
