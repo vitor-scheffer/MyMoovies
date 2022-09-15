@@ -13,6 +13,7 @@
 		970E765028D35C54003B7022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E764E28D35C54003B7022 /* Main.storyboard */; };
 		970E765228D35C59003B7022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970E765128D35C59003B7022 /* Assets.xcassets */; };
 		970E765528D35C59003B7022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E765328D35C59003B7022 /* LaunchScreen.storyboard */; };
+		970E765D28D35FCA003B7022 /* Moovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E765C28D35FCA003B7022 /* Moovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		970E765128D35C59003B7022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		970E765428D35C59003B7022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		970E765628D35C59003B7022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		970E765C28D35FCA003B7022 /* Moovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				970E764828D35C54003B7022 /* AppDelegate.swift */,
 				970E764A28D35C54003B7022 /* SceneDelegate.swift */,
 				970E764C28D35C54003B7022 /* ViewController.swift */,
+				970E765C28D35FCA003B7022 /* Moovie.swift */,
 				970E764E28D35C54003B7022 /* Main.storyboard */,
 				970E765128D35C59003B7022 /* Assets.xcassets */,
 				970E765328D35C59003B7022 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				970E764D28D35C54003B7022 /* ViewController.swift in Sources */,
 				970E764928D35C54003B7022 /* AppDelegate.swift in Sources */,
+				970E765D28D35FCA003B7022 /* Moovie.swift in Sources */,
 				970E764B28D35C54003B7022 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
