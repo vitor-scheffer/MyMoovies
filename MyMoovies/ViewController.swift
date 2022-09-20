@@ -50,9 +50,12 @@ class ViewController: UITableViewController {
         let moovie = moovies[ indexPath.row ]
         let moovieContentReuse = "moovieContent"
         
-        let moovieContent = tableView.dequeueReusableCell(withIdentifier: moovieContentReuse, for: indexPath)
-        moovieContent.textLabel?.text = moovie.tittle
-        moovieContent.imageView?.image = moovie.img
+        let moovieContent = tableView.dequeueReusableCell(withIdentifier: moovieContentReuse, for: indexPath) as! MoovieContainer
+        moovieContent.moovieImage.image = moovie.img
+        moovieContent.moovieTittle.text = moovie.tittle
+        moovieContent.moovieAbstract.text = moovie.description
+//        moovieContent.textLabel?.text = moovie.tittle
+//        moovieContent.imageView?.image = moovie.img
         
         return moovieContent
     }
