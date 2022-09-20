@@ -54,6 +54,9 @@ class ViewController: UITableViewController {
         moovieContent.moovieImage.image = moovie.img
         moovieContent.moovieTittle.text = moovie.tittle
         moovieContent.moovieAbstract.text = moovie.description
+        
+//        moovieContent.moovieImage.layer.cornerRadius = 42
+//        moovieContent.moovieImage.clipsToBounds = true
 //        moovieContent.textLabel?.text = moovie.tittle
 //        moovieContent.imageView?.image = moovie.img
         
