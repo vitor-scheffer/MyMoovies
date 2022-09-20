@@ -16,25 +16,25 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var moovie: Moovie
-        moovie = Moovie(tittle: "Filme 1", description: "Descrição 1", img: UIImage(named: "filme1")! )
+        moovie = Moovie(tittle: "007 - Spectre", description: "Descrição 1", img: UIImage(named: "filme1")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 2", description: "Descrição 2", img: UIImage(named: "filme2")! )
+        moovie = Moovie(tittle: "Star Wars", description: "Descrição 2", img: UIImage(named: "filme2")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 3", description: "Descrição 2", img: UIImage(named: "filme3")! )
+        moovie = Moovie(tittle: "Impacto Mortal", description: "Descrição 3", img: UIImage(named: "filme3")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 4", description: "Descrição 2", img: UIImage(named: "filme4")! )
+        moovie = Moovie(tittle: "Deadpool", description: "Descrição 4", img: UIImage(named: "filme4")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 5", description: "Descrição 2", img: UIImage(named: "filme5")! )
+        moovie = Moovie(tittle: "O Regresso", description: "Descrição 5", img: UIImage(named: "filme5")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 6", description: "Descrição 2", img: UIImage(named: "filme6")! )
+        moovie = Moovie(tittle: "A Herdeira", description: "Descrição 6", img: UIImage(named: "filme6")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 7", description: "Descrição 2", img: UIImage(named: "filme7")! )
+        moovie = Moovie(tittle: "Caçadores de Emoção", description: "Descrição 7", img: UIImage(named: "filme7")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 8", description: "Descrição 2", img: UIImage(named: "filme8")! )
+        moovie = Moovie(tittle: "Regresso do Mal", description: "Descrição 8", img: UIImage(named: "filme8")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 9", description: "Descrição 2", img: UIImage(named: "filme9")! )
+        moovie = Moovie(tittle: "Planeta dos Macacos", description: "Descrição 9", img: UIImage(named: "filme9")! )
         moovies.append( moovie )
-        moovie = Moovie(tittle: "Filme 10", description: "Descrição 2", img: UIImage(named: "filme10")! )
+        moovie = Moovie(tittle: "Hardcore", description: "Descrição 10", img: UIImage(named: "filme10")! )
         moovies.append( moovie )
     }
     
@@ -61,6 +61,18 @@ class ViewController: UITableViewController {
 //        moovieContent.imageView?.image = moovie.img
         
         return moovieContent
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moovieDetailSegue" {
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                
+                let currentMoovie = self.moovies[ indexPath.row ]
+                let destinyViewController = segue.destination as! MoovieDetail
+                destinyViewController.moovie = currentMoovie
+            }
+        }
     }
 
 }

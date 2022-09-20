@@ -15,6 +15,7 @@
 		970E765528D35C59003B7022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E765328D35C59003B7022 /* LaunchScreen.storyboard */; };
 		970E765D28D35FCA003B7022 /* Moovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E765C28D35FCA003B7022 /* Moovie.swift */; };
 		970FB43028DA4E8500B79DA3 /* MoovieContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970FB42F28DA4E8500B79DA3 /* MoovieContainer.swift */; };
+		970FB43228DA7B7800B79DA3 /* MoovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970FB43128DA7B7800B79DA3 /* MoovieDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		970E765628D35C59003B7022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		970E765C28D35FCA003B7022 /* Moovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moovie.swift; sourceTree = "<group>"; };
 		970FB42F28DA4E8500B79DA3 /* MoovieContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoovieContainer.swift; sourceTree = "<group>"; };
+		970FB43128DA7B7800B79DA3 /* MoovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoovieDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				970E764C28D35C54003B7022 /* ViewController.swift */,
 				970E765C28D35FCA003B7022 /* Moovie.swift */,
 				970E764E28D35C54003B7022 /* Main.storyboard */,
+				970FB43128DA7B7800B79DA3 /* MoovieDetail.swift */,
 				970FB42F28DA4E8500B79DA3 /* MoovieContainer.swift */,
 				970E765128D35C59003B7022 /* Assets.xcassets */,
 				970E765328D35C59003B7022 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				970E764D28D35C54003B7022 /* ViewController.swift in Sources */,
+				970FB43228DA7B7800B79DA3 /* MoovieDetail.swift in Sources */,
 				970E764928D35C54003B7022 /* AppDelegate.swift in Sources */,
 				970E765D28D35FCA003B7022 /* Moovie.swift in Sources */,
 				970E764B28D35C54003B7022 /* SceneDelegate.swift in Sources */,
