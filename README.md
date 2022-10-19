@@ -1,4 +1,4 @@
 # MyMoovies
 App meus filmes em Swift.
 
-Testando tableview, segues, 
+Testando tableview, segues, navigation controller, delegates, 
